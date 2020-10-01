@@ -43,6 +43,9 @@ const nav1 = document.querySelector('nav');
 let prepend1 = "Start";
 nav1.prepend(prepend1);
 
+let append1 = "End";
+nav1.append(append1);
+
 let logo = document.querySelector("#logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
@@ -57,9 +60,6 @@ a1[2].textContent = (siteContent["nav"]["nav-item-3"]);
 a1[3].textContent = (siteContent["nav"]["nav-item-4"]);
 a1[4].textContent = (siteContent["nav"]["nav-item-5"]);
 a1[5].textContent = (siteContent["nav"]["nav-item-6"]);
-
-let append1 = "End";
-nav1.append(append1);
 
 let ctaText1 = document.querySelector("h1");
 ctaText1.innerHTML = (siteContent["cta"]["h1"]);
