@@ -50,13 +50,21 @@ button1.innerHTML = (siteContent["cta"]["button"]);
 let headerImage1 = document.querySelector("#cta-img");
 headerImage1.setAttribute('src', siteContent["cta"]["img-src"]);
 
-let featuresH41 = document.querySelector("h4");
-featuresH41.innerHTML = (siteContent["main-content"]["features-h4"]);
+let H41 = document.getElementsByTagName("h4");
+H41[0].textContent = (siteContent["main-content"]["features-h4"]);
+H41[1].textContent = (siteContent["main-content"]["about-h4"]);
 
-
+let p1 = document.getElementsByTagName("p");
+p1[0].textContent = (siteContent["main-content"]["features-content"]);
+p1[1].textContent = (siteContent["main-content"]["about-content"]);
 
 let midPageImage1 = document.querySelector("#middle-img");
 midPageImage1.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
-let featuresContent1 = document.querySelector(".main-content.top-content.text-content p");
-featuresContent1.setAttribute('src', siteContent["main-content"]["features-h4"]);
+H41[2].textContent = (siteContent["main-content"]["services-h4"]);
+H41[3].textContent = (siteContent["main-content"]["product-h4"]);
+H41[4].textContent = (siteContent["main-content"]["vision-h4"]);
+
+p1[2].textContent = (siteContent["main-content"]["services-content"]);
+p1[3].textContent = (siteContent["main-content"]["product-content"]);
+p1[4].textContent = (siteContent["main-content"]["vision-content"]);
