@@ -38,6 +38,14 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+let a1 = document.getElementsByTagName("a");
+a1[0].textContent = (siteContent["nav"]["nav-item-1"]);
+a1[1].textContent = (siteContent["nav"]["nav-item-2"]);
+a1[2].textContent = (siteContent["nav"]["nav-item-3"]);
+a1[3].textContent = (siteContent["nav"]["nav-item-4"]);
+a1[4].textContent = (siteContent["nav"]["nav-item-5"]);
+a1[5].textContent = (siteContent["nav"]["nav-item-6"]);
+
 let logo = document.querySelector("#logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
@@ -68,3 +76,11 @@ H41[4].textContent = (siteContent["main-content"]["vision-h4"]);
 p1[2].textContent = (siteContent["main-content"]["services-content"]);
 p1[3].textContent = (siteContent["main-content"]["product-content"]);
 p1[4].textContent = (siteContent["main-content"]["vision-content"]);
+
+H41[5].textContent = (siteContent["contact"]["contact-h4"]);
+
+p1[5].textContent = (siteContent["contact"]["address"]);
+p1[6].textContent = (siteContent["contact"]["phone"]);
+p1[7].textContent = (siteContent["contact"]["email"]);
+
+p1[8].textContent = (siteContent["footer"]["copyright"]);
