@@ -38,5 +38,65 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+const nav1 = document.querySelector('nav');
+const prepend1 = document.createElement('a');
+const append1 = document.createElement('a');
+
+append1.setAttribute('href',"#");
+append1.innerText = "End";
+nav1.appendChild(append1);
+
+prepend1.setAttribute('href',"#");
+prepend1.innerText = "Start";
+nav1.prepend(prepend1);
+
+let logo = document.querySelector("#logo-img");
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+let a1 = document.querySelectorAll("a");
+a1.forEach((item) => {
+  item.style.color = 'green';
+});
+
+a1[1].textContent = (siteContent["nav"]["nav-item-1"]);
+a1[2].textContent = (siteContent["nav"]["nav-item-2"]);
+a1[3].textContent = (siteContent["nav"]["nav-item-3"]);
+a1[4].textContent = (siteContent["nav"]["nav-item-4"]);
+a1[5].textContent = (siteContent["nav"]["nav-item-5"]);
+a1[6].textContent = (siteContent["nav"]["nav-item-6"]);
+
+let ctaText1 = document.querySelector("h1");
+ctaText1.innerHTML = (siteContent["cta"]["h1"]);
+
+let button1 = document.querySelector("button");
+button1.innerHTML = (siteContent["cta"]["button"]);
+
+let headerImage1 = document.querySelector("#cta-img");
+headerImage1.setAttribute('src', siteContent["cta"]["img-src"]);
+
+let H41 = document.querySelectorAll("h4");
+H41[0].textContent = (siteContent["main-content"]["features-h4"]);
+H41[1].textContent = (siteContent["main-content"]["about-h4"]);
+
+let p1 = document.querySelectorAll("p");
+p1[0].textContent = (siteContent["main-content"]["features-content"]);
+p1[1].textContent = (siteContent["main-content"]["about-content"]);
+
+let midPageImage1 = document.querySelector("#middle-img");
+midPageImage1.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+H41[2].textContent = (siteContent["main-content"]["services-h4"]);
+H41[3].textContent = (siteContent["main-content"]["product-h4"]);
+H41[4].textContent = (siteContent["main-content"]["vision-h4"]);
+
+p1[2].textContent = (siteContent["main-content"]["services-content"]);
+p1[3].textContent = (siteContent["main-content"]["product-content"]);
+p1[4].textContent = (siteContent["main-content"]["vision-content"]);
+
+H41[5].textContent = (siteContent["contact"]["contact-h4"]);
+
+p1[5].textContent = (siteContent["contact"]["address"]);
+p1[6].textContent = (siteContent["contact"]["phone"]);
+p1[7].textContent = (siteContent["contact"]["email"]);
+
+p1[8].textContent = (siteContent["footer"]["copyright"]);
